@@ -1,0 +1,27 @@
+// 没有 polyfill 的配置
+// {
+//     "presets": ["@babel/preset-env"]
+// }
+
+
+// 有 polyfill 的配置
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": "> 0.25%, not dead",
+                "useBuiltIns": "usage",
+                "corejs": 3
+            }
+        ]
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-transform-runtime",
+            {
+                "corejs": 3
+            }
+        ]
+    ]
+}

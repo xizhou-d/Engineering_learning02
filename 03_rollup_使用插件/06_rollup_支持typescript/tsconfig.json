@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+            "target": "es5",
+                "lib": ["esnext", "dom", "dom.iterable"],
+                    "skipLibCheck": true,
+
+                        "moduleResolution": "bundler",
+                            "noEmit": true,
+                                    "resolveJsonModule": true,
+                                        "isolatedModules": true,
+    },
+    "include": ["src/**/*", "rollup.config.ts"],
+}
