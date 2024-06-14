@@ -1,0 +1,15 @@
+.app-module_button__jJuaG {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.app-module_button__jJuaG:hover {
+  background-color: blue;
+}
+
+.app-module_img__J-lcl {
+  width: 100px;
+}
