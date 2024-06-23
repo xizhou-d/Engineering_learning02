@@ -5,6 +5,7 @@ import Radio from '@/assets/radio-button-unchecked-svgrepo-com.svg'
 import yangjian from '@/assets/yangjian.png'
 import shihao from '@/assets/shihao.jpeg'
 import Loading from '@/components/Loading'
+import utils from 'xizhou_utils'
 
 const About = lazy(() => delay(import('@/components/About.tsx'), 2000))
 
@@ -31,6 +32,8 @@ export default function App() {
                     <About />
                 </Suspense>
             }
+
+            <h1>{ utils.randowNumber(30, 200) }</h1>
         </div>
     )
 }
