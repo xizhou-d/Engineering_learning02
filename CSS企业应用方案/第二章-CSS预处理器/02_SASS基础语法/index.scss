@@ -1,0 +1,30 @@
+// 声明全局变量
+$width: 300px;
+$height: 300px;
+$bgcolor: #4caf50;
+
+.box1 {
+    // 声明局部变量: 变量的声明时支持块级作用域的，如果是在一个嵌套规则内部定义的变量，那么就只能在嵌套规则内部使用（局部变量），如果不是在嵌套规则内定义的变量那就是全局变量。
+    $width: 500px;
+    // 这里定义的变量在 .box1 之外使用是会报错的，但是可以使用 !global将变量转换为全局的，可以在任何地方使用
+    $box1color: red !global;
+    width: $width;
+    height: $height;
+    background-color: $bgcolor;
+    p {
+        // 这里的 $width 用的是 .box1 中定义的变量
+        width: $width;
+        background-color: #06e3ea;
+    }
+}
+
+.box2 {
+    // .box1 中定义的变量，不能在这里使用。只能使用全局的变量
+    width: $width;
+    height: $height;
+    background-color: $bgcolor;
+    // 这里使用 .box1 中定义的 $box1color 变量会报错的
+    p {
+        color: $box1color;
+    }
+}
