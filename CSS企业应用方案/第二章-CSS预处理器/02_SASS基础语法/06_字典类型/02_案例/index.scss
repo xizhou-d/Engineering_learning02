@@ -1,0 +1,13 @@
+$icons: (
+    "eye": "\f112",
+    "start": "\f12e",
+    "stop": "\f12f",
+);
+
+@each $key, $value in $icons {
+    .icon-#{$key}:before {
+        display: inline-block;
+        font-family: "Open Sans";
+        content: $value;
+    }
+}

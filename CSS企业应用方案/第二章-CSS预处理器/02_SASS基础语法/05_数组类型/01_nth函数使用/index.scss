@@ -1,0 +1,12 @@
+// 创建一个 list
+$font-sizes: 12px 14px 16px 18px 24px;
+
+// 通过索引访问 list 中的值     ⚠️ nth 下标是从 1 开始的，nth(3) 取到的元素是 16px
+$base-font-size: nth($font-sizes, 3);
+
+// 为元素设置样式
+body {
+    font-size: $base-font-size;
+}
+
+// ⚠️ scss 中变量声明后面必须加 分号。 

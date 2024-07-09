@@ -1,0 +1,14 @@
+// 字典类型必须要使用小括号扩起来，小括号里面是一对一对的键值对
+
+// 创建一个 Map
+$colors: (
+    "primary": #4caf5a,
+    "secondary": #ff9800,
+    "accent": #2196f3,
+);
+
+$primary-color: map-get($colors, "primary");
+
+button {
+    background-color: $primary-color;
+}
