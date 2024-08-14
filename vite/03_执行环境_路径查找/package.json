@@ -1,17 +1,21 @@
 {
-  "name": "02_defineConfig自动提示",
+  "name": "03_常见知识",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev": "vite --mode production",
-    "build": "vite build"
+    "dev": "vite"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/lodash-es": "^4.17.12",
     "typescript": "^5.5.4",
     "vite": "^5.4.0"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21"
   }
 }
